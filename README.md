@@ -1,6 +1,6 @@
-# Control Resonant Local Exporter
+# Control Resonant Local Extractor
 
-An **unofficial, local-only Linux exporter** for music and Deluxe Artbook assets from a legitimately installed copy of *Control Resonant*. Tested on Fedora with **19 music tracks** and **201 Artbook PNGs** successfully exported, alongside automated tests using synthetic files.
+An **unofficial, local-only Linux exporter** for music and Deluxe Artbook assets from a legitimately installed copy of *Control Resonant*. Tested on Fedora with **19 music tracks** and **201 Artbook PNGs** successfully Extracted, alongside automated tests using synthetic files.
 
 It contains **no game assets, third-party programs, or decryption keys**. It reads your local game archives using a separately obtained parser. See [LEGAL.md](LEGAL.md) for legal and publication considerations.
 
@@ -10,12 +10,12 @@ It contains **no game assets, third-party programs, or decryption keys**. It rea
 
 This tool is intended **only for personal use with your own legally purchased copy of Control Resonant and a valid license to access its content**. It does not give you permission to share, publish, or sell the extracted music or artwork.
 
-## What it can export
+## What it can Extract
 
 - **Deluxe Soundtrack:** 13 identified tracks, as WAV or FLAC.
 - **Zoe's Mixtape:** All **six** identified tracks in the official album order. Four previously missing soundbanks were validated in the local game archives by the user (see track list below).
-- **Deluxe Artbook:** `artbook/*_large.tex` entries from `base-generic.rmdtoc`. These were verified as DDS images. On the tested game install, **201 images** were exported at full available `large` resolution.
-- **Offline Artbook gallery:** `index.html` and `manifest.txt`, referencing local exported PNGs.
+- **Deluxe Artbook:** `artbook/*_large.tex` entries from `base-generic.rmdtoc`. These were verified as DDS images. On the tested game install, **201 images** were extracted at full available `large` resolution.
+- **Offline Artbook gallery:** `index.html` and `manifest.txt`, referencing local extracted PNGs.
 - Optional retention of the extracted DDS files via `--keep-dds` (command-line only). By default only PNGs are kept, so no extra multi-gigabyte DDS collection remains.
 
 ### Zoe's Mixtape track list
@@ -29,7 +29,7 @@ This tool is intended **only for personal use with your own legally purchased co
 | 05 | Fight for Control (We Go To War) | `banks/play_menu_fight_for_control.bnk` |
 | 06 | Manalan Mailla | `banks/play_menu_manalan_mailla.bnk` |
 
-The exporter resolves the Wwise media IDs from the installed soundbanks at runtime. It does not need a hard-coded list of audio IDs to extract the data.
+The Extractor resolves the Wwise media IDs from the installed soundbanks at runtime. It does not need a hard-coded list of audio IDs to extract the data.
 
 The utility skips already existing exports unless `--overwrite` is used. **It never modifies the original game archives.** It does not export the Artbook's in-game captions, artist credits, categories, or presentation metadata; these are not yet mapped.
 
