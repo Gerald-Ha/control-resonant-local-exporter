@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+output/
+exports/
+*.rmdblob
+*.rmdtoc
+*.wem
+*.bnk
+*.tex
+*.wav
+*.flac
+*.mp3
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.zip
+
+# Third-party programs supplied by the user: never include in the repository.
+tools/*
+!tools/.gitkeep
